@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="JusTim LENOVO Backup은 개인 서버 백업을 암호화해 본인의 Google Drive에 저장하는 개인용 도구입니다.">
+  <meta name="description" content="JusTim LENOVO Backup은 개인 서버 백업을 암호화해 private Backblaze B2 bucket에 저장하는 개인용 도구입니다.">
   <title>JusTim LENOVO Backup</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -12,7 +12,7 @@
     <header class="hero">
       <p class="eyebrow">PERSONAL INFRASTRUCTURE</p>
       <h1>JusTim LENOVO Backup</h1>
-      <p class="lead">개인 서버의 백업을 암호화하여 본인의 Google Drive에 보관하는 비공개 운영 도구입니다.</p>
+      <p class="lead">개인 서버의 백업을 암호화하여 private Backblaze B2 bucket에 보관하는 비공개 운영 도구입니다.</p>
       <div class="status"><span aria-hidden="true"></span> 개인용 · 비상업적 · 외부 사용자에게 제공하지 않음</div>
     </header>
 
@@ -20,23 +20,23 @@
       <h2 id="purpose">무엇을 하나요?</h2>
       <div class="grid">
         <article><h3>1. 백업</h3><p>개인 LENOVO 서버의 데이터베이스, 파일 저장소와 복구에 필요한 설정을 백업합니다.</p></article>
-        <article><h3>2. 암호화</h3><p>Google Drive에 보내기 전에 공개키 기반 암호화로 잠급니다. 복호화 개인키는 Mac에만 보관합니다.</p></article>
-        <article><h3>3. 제한 업로드</h3><p>Google OAuth의 <code>drive.file</code> 범위만 사용해 이 도구가 만든 특정 파일만 관리합니다.</p></article>
+        <article><h3>2. 암호화</h3><p>B2에 보내기 전에 공개키 기반 암호화로 잠급니다. 복호화 개인키는 Mac에만 보관합니다.</p></article>
+        <article><h3>3. 제한 업로드</h3><p>전용 private bucket에만 접근하는 제한 Application Key로 암호문과 checksum만 관리합니다.</p></article>
       </div>
     </section>
 
     <section aria-labelledby="boundaries">
       <h2 id="boundaries">데이터 사용 경계</h2>
       <ul class="checks">
-        <li>Google Drive 전체를 탐색하거나 임의 파일을 읽지 않습니다.</li>
-        <li>Google 사용자 데이터를 광고·판매·프로파일링에 사용하지 않습니다.</li>
-        <li>제3자를 위한 공개 서비스가 아니며 승인된 본인 계정만 사용합니다.</li>
+        <li>Application Key는 LENOVO 전용 private bucket 하나에만 접근합니다.</li>
+        <li>B2에는 복호화할 수 없는 암호문과 checksum만 저장합니다.</li>
+        <li>제3자를 위한 공개 서비스가 아니며 운영자 본인만 사용합니다.</li>
         <li>별도의 분석 도구, 광고 쿠키, 사용자 추적 기능을 사용하지 않습니다.</li>
       </ul>
     </section>
 
     <nav class="cards" aria-label="정책 문서">
-      <a href="privacy/"><strong>개인정보처리방침</strong><span>Google Drive 데이터의 처리·보관·삭제 기준</span></a>
+      <a href="privacy/"><strong>개인정보처리방침</strong><span>B2 암호화 백업의 처리·보관·삭제 기준</span></a>
       <a href="terms/"><strong>서비스 이용조건</strong><span>개인용 백업 도구의 이용 범위와 책임</span></a>
     </nav>
 

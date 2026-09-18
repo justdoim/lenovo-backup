@@ -1,8 +1,8 @@
 # lenovo-backup
 
-`JusTim LENOVO Backup` OAuth production용 공개 안내·개인정보처리방침·서비스 이용조건 정적 사이트.
+`JusTim LENOVO Backup`의 Backblaze B2 암호화 백업 구조·개인정보처리방침·서비스 이용조건을 공개하는 정적 사이트.
 
-## Public URLs (planned)
+## Public URLs
 
 - Home: `https://justdoim.github.io/lenovo-backup/`
 - Privacy: `https://justdoim.github.io/lenovo-backup/privacy/`
