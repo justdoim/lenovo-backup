@@ -6,3 +6,5 @@
 - Do not add analytics, advertising, trackers, forms, databases, or third-party runtime scripts.
 - Treat publishing, repository visibility changes, and policy wording changes as review-required external actions.
 - Keep the local folder and GitHub repository slug as `lenovo-backup`.
+- Use the `justdoim` GitHub account for this repository and future LENOVO operations.
+- Use the `github-justdoim` SSH host alias for fetch and push; do not change the global `donghanlim` Git identity used by existing repositories.
